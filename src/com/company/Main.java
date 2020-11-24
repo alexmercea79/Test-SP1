@@ -16,10 +16,11 @@ public class Main {
         director2.addDirector(mp3);
         director1.addDirector(svg);
         FisierTipTxt fisier_tip_txt2=new FisierTipTxt("fisier tip txt2");
+        fisier_tip_txt2.setAlignStrategy(new AlignLeft());
         fisier_tip_txt2.setAlignStrategy(new AlignCenter());
+        fisier_tip_txt2.setAlignStrategy(new AlignRight());
         director2.addDirector(fisier_tip_txt2);
         director1.print();
-
         Marime marime1=new Marime();
         director1.accept(marime1);
         marime1.printMarime();
